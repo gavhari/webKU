@@ -75,8 +75,11 @@ WSGI_APPLICATION = 'myweb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'webKU',
+        'USER': 'gabe',
+        'PASSWORD': 'semakinmanis12',
+        'HOST': '/var/run/mysqld/mysqld.sock'
     }
 }
 
